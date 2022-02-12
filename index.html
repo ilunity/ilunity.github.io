@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>ToDo List</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="high-priority-task priority-list">
+				<div class="high-priority-task__title priority__title">HIGH</div>
+				<form class="high-priority-task__form task-form" onsubmit="return false">
+					<textarea class="task-form__text" placeholder="Добавить важных дел"></textarea>
+					<button class="task-form__btn" type="submit">
+						<img src="img/icons/plus.svg" alt="Иконка добавить задачу">
+					</button>
+				</form>
+				<div class="high-priority-task__list task-list">
+				</div>
+			</div>
+			<div class="low-priority-task priority-list">
+				<div class="low-priority-task__title priority__title">LOW</div>
+				<form class="low-priority-task__form task-form" onsubmit="return false">
+					<textarea class="task-form__text" placeholder="Добавить"></textarea>
+					<button class="task-form__btn" type="submit">
+						<img src="img/icons/plus.svg" alt="Иконка добавить задачу">
+					</button>
+				</form>
+				<div class="low-priority-task__list task-list">
+				</div>
+			</div>
+		</div>
+		<script type="module" src="js/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,102 @@
+@import "../css/normalize_style.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+body {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.container {
+  width: 476px;
+  margin: 0 auto;
+  padding: 20px 8px;
+  background-color: #E5E5E5;
+  border: 1px dashed #5a85fc;
+}
+
+.priority-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.priority__title {
+  height: 21px;
+  width: 43px;
+  margin: 0 auto;
+  margin-bottom: 12px;
+}
+
+.task-form {
+  width: 460px;
+  min-height: 45px;
+  background-color: #A1ACEE;
+  border: 1px solid #989898;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  margin-bottom: 8px;
+}
+.task-form__text {
+  width: 350px;
+  height: 20px;
+  background-color: inherit;
+  line-height: 20px;
+  overflow-wrap: break-word;
+  overflow: hidden;
+  resize: none;
+}
+.task-form__text::placeholder {
+  color: #FFFFFF;
+}
+.task-form__btn {
+  background-color: inherit;
+}
+
+.task-list {
+  margin-bottom: 12px;
+}
+
+.task {
+  width: 460px;
+  background: #FFFFFF;
+  border: 1px solid #989898;
+  border-radius: 6px;
+  display: flex;
+  padding: 12px;
+  margin-bottom: 8px;
+}
+.task__text {
+  width: 360px;
+  height: auto;
+  margin: 0 18px 0 12px;
+  overflow-wrap: break-word;
+  overflow: auto;
+}
+.task:last-child {
+  margin-bottom: 0;
+}
+.task_active {
+  background-color: #FCE9CA;
+}
+
+.check-box {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  background: url("../img/icons/circle.svg") center no-repeat;
+}
+.check-box_active {
+  background: url("../img/icons/filled_circle.svg") center no-repeat;
+}
+
+.delete-task-btn {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  background: url("../img/icons/cross.svg") center no-repeat;
+}
+
+/*# sourceMappingURL=style.css.map */
